@@ -27,19 +27,22 @@
             pos_hint: {'center_x': 0.5, 'center_y': 0.5}
             spacing: '10dp'
             Label:
-                text: 'Username'
+                text: 'USERNAME'
+                
                 size_hint: None, None
-                width: 73
+                width: 90
                 height: 25
+                bold:True
             TextInput:
                 multiline: False
                 size_hint: None, None
                 width: '400dp'
                 height: '40dp'
             Label:
-                text: 'Password'
+                text: 'PASSWORD'
+                bold:True
                 size_hint: None, None
-                width: 73
+                width: 90
                 height: 25
             TextInput:
                 multiline: False
@@ -49,6 +52,8 @@
                 password: True
             Button:
                 text: 'Login'
+                font_size:24
                 size_hint: None, None
-                width: '60dp'
-                height: '40dp'
+                width: '100dp'
+                height: '55dp'
+                
