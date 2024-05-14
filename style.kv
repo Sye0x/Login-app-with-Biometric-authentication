@@ -1,0 +1,47 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width,root.height
+        padding: ('90dp', '90dp', '90dp', '90dp')
+        spacing: '200dp'
+        
+        Image:
+            source:'logo.png'
+            allow_stretch:False
+            keep_ratio:False
+            size_hint: None,None
+                width:'110dp'
+                height:'110dp'
+            
+            
+            
+        BoxLayout:
+            orientation:'vertical'
+            padding: ('90dp', '90dp', '90dp', '90dp')
+            spacing: '10dp'
+            Label:
+                text:'Username'
+                size_hint: None,None
+                width:73
+                height:25
+            TextInput:
+                multiline:False
+                size_hint: None,None
+                width: '400dp'
+                height:'40dp'
+            Label:
+                text:'Password'
+                size_hint: None,None
+                width:73
+                height:25
+            TextInput:
+                multiline:False
+                size_hint: None,None
+                width: '400dp'
+                height:'40dp'
+                password:True
+            Button:
+                text:'Login'
+                size_hint: None,None
+                width:'60dp'
+                height:'40dp'
